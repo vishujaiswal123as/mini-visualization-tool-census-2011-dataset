@@ -7,7 +7,7 @@ import pandas as pd
 st.set_page_config(layout='wide')
 st.sidebar.title('Interactive Analysis Page')
 
-df = pd.read_csv('datasets/india_my_updated.csv')
+df = pd.read_csv('india_my_updated.csv')
 
 
 pio.templates.default = "plotly"
@@ -116,3 +116,4 @@ fig.update_yaxes(title_text="Count")
 
 # ——— SHOW ———
 st.plotly_chart(fig, use_container_width=True)
+
