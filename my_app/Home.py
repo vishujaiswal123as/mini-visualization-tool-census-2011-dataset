@@ -8,13 +8,13 @@ import json
 # one place used it for open file 
 
 # Load geojson
-with open('C:/Users/HP/Music/my_app/datasets/india_clean.geojson', "r") as f:
+with open('india_clean.geojson', "r") as f:
     gdf = json.load(f)
 
 st.set_page_config(layout='wide')
 st.title("India Census 2011 Data Visualization")
 
-df = pd.read_csv('datasets/india_census2011_project.csv')
+df = pd.read_csv('india_census2011_project.csv')
 # df=df[df['District name'] != 'AURANGABAD']
 # df.to_csv('datasets/india_census2011_project.csv',index=False)
 # geojson_path = 'datasets/india.geojson'
@@ -99,6 +99,7 @@ if plot:
         ,hover_data=secondary
       )
         st.plotly_chart(fig, use_container_width=True)
+
 
 
 
