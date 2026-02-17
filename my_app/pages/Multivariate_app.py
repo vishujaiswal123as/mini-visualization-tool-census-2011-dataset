@@ -6,7 +6,7 @@ st.set_page_config(layout='wide')
 st.sidebar.title('Multivariate Analysis Page')
 
 
-df = pd.read_csv('datasets/india_my_updated.csv')
+df = pd.read_csv('india_my_updated.csv')
 
 list_of_states = list(df['State name'].unique())
 list_of_states.insert(0,'Overall India')
